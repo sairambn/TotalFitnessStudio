@@ -52,7 +52,8 @@ const TRANSFORMATIONS: Transformation[] = [
   },
 ];
 
-const ACCENT = "#FF5B1F";
+// Unified with site brand token (--color-brand)
+const ACCENT = "#E2FF00";
 
 /* ------------------------ Count-up animated stat ------------------------ */
 function useCountUp(target: number, active: boolean, duration = 1600) {
@@ -139,7 +140,7 @@ function BeforeAfter({
       />
       <div
         className="absolute top-3 right-3 font-mono text-[10px] font-bold uppercase tracking-[0.3em] px-2 py-1 z-10"
-        style={{ background: ACCENT, color: "#050505" }}
+        style={{ background: ACCENT, color: "#0F0F0F" }}
       >
         After
       </div>
@@ -173,7 +174,7 @@ function BeforeAfter({
           style={{
             background: "rgba(255,255,255,0.08)",
             border: `1px solid ${ACCENT}`,
-            boxShadow: `0 0 30px ${ACCENT}, inset 0 0 12px rgba(255,91,31,0.4)`,
+            boxShadow: `0 0 30px ${ACCENT}, inset 0 0 12px rgba(226,255,0,0.35)`,
           }}
         >
           <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke={ACCENT} strokeWidth="2.5">
@@ -249,7 +250,7 @@ function TransformationCard({ t, featured = false }: { t: Transformation; featur
         aria-hidden
         className="absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
         style={{
-          background: `radial-gradient(400px circle at var(--mx,50%) var(--my,50%), rgba(255,91,31,0.35), transparent 60%)`,
+          background: `radial-gradient(400px circle at var(--mx,50%) var(--my,50%), rgba(226,255,0,0.35), transparent 60%)`,
         }}
       />
       <div
@@ -262,7 +263,7 @@ function TransformationCard({ t, featured = false }: { t: Transformation; featur
           <div
             aria-hidden
             className="absolute top-4 left-4 z-20 font-mono text-[10px] font-bold uppercase tracking-[0.4em] px-3 py-1.5"
-            style={{ background: ACCENT, color: "#050505" }}
+            style={{ background: ACCENT, color: "#0F0F0F" }}
           >
             ★ Featured Story
           </div>
@@ -355,7 +356,6 @@ function TransformationCard({ t, featured = false }: { t: Transformation; featur
           </div>
         </div>
       </div>
-
     </div>
   );
 }
@@ -380,20 +380,20 @@ export function TransformationSection() {
       className="relative overflow-hidden border-b border-white/10"
       style={{ background: "#050505" }}
     >
-      {/* Ambient orange spotlight following cursor */}
+      {/* Ambient brand spotlight following cursor */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-70"
         style={{
           background:
-            "radial-gradient(600px circle at var(--sx, 50%) var(--sy, 30%), rgba(255,91,31,0.10), transparent 60%)",
+            "radial-gradient(600px circle at var(--sx, 50%) var(--sy, 30%), rgba(226,255,0,0.10), transparent 60%)",
         }}
       />
       {/* Floating orbs */}
       <div
         aria-hidden
         className="pointer-events-none absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full blur-3xl opacity-30"
-        style={{ background: "radial-gradient(circle, rgba(255,91,31,0.5), transparent 60%)" }}
+        style={{ background: "radial-gradient(circle, rgba(226,255,0,0.45), transparent 60%)" }}
       />
       <div
         aria-hidden
@@ -494,7 +494,7 @@ export function TransformationSection() {
               className="group relative inline-flex items-center gap-4 px-10 py-5 font-mono text-xs font-bold uppercase tracking-[0.35em] text-black overflow-hidden"
               style={{
                 background: ACCENT,
-                boxShadow: `0 0 60px rgba(255,91,31,0.5)`,
+                boxShadow: `0 0 60px rgba(226,255,0,0.45)`,
               }}
             >
               <span className="relative z-10">Join Now</span>
