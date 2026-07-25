@@ -20,7 +20,7 @@ function NotFoundComponent() {
         <h1 className="font-display text-7xl text-brand">404</h1>
         <h2 className="mt-4 font-display text-2xl uppercase tracking-wide">Page not found</h2>
         <p className="mt-2 text-sm text-white/50">
-          The page you're looking for doesn't exist or has been moved.
+          The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <div className="mt-8">
           <Link
@@ -46,7 +46,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-dark px-4 text-white">
       <div className="max-w-md text-center">
         <p className="font-mono text-brand text-xs uppercase tracking-[0.3em] mb-4">System Fault</p>
-        <h1 className="font-display text-3xl uppercase tracking-wide">This page didn't load</h1>
+        <h1 className="font-display text-3xl uppercase tracking-wide">This page didn&apos;t load</h1>
         <p className="mt-2 text-sm text-white/50">
           Something went wrong on our end. Try refreshing or head back home.
         </p>
@@ -77,27 +77,47 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Total Fitness Studio — Best Gym in Chromepet, Chennai · 4.9 ★" },
+      {
+        title:
+          "Total Fitness Studio — Best Gym in Chromepet, Chennai | 4.9★ · 798 Reviews",
+      },
       {
         name: "description",
         content:
-          "Chennai's highest-rated gym in Chromepet. Women-owned, 4.9 ★ on Google across 755 interactions. Strength, HIIT & personal training. Open 4:30 AM – 9:30 PM. Call +91 99419 42942.",
+          "Total Fitness Studio — Chromepet's top-rated gym (4.9★ from 798 reviews). Women-owned fitness studio in Hasthinapuram above Axis Bank. Strength, HIIT & personal training. Open daily 4:30 AM – 9:30 PM. Call +91 99419 42942.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Total Fitness Studio, gym Chromepet, best gym Chromepet, gym Hasthinapuram, personal trainer Chromepet, fitness studio Chennai, women owned gym Chennai, Chitlapakkam gym",
       },
       { name: "theme-color", content: "#0F0F0F" },
-      { name: "robots", content: "index, follow" },
-      { property: "og:title", content: "Total Fitness Studio — Chromepet, Chennai" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
+      { name: "geo.region", content: "IN-TN" },
+      { name: "geo.placename", content: "Chromepet, Chennai" },
+      { name: "geo.position", content: "12.9524;80.1381" },
+      { name: "ICBM", content: "12.9524, 80.1381" },
+      {
+        property: "og:title",
+        content: "Total Fitness Studio — Best Gym in Chromepet · 4.9★",
+      },
       {
         property: "og:description",
         content:
-          "4.9 ★ rated gym in Chromepet. Strength, HIIT, personal training. Women-owned. Open daily 4:30 AM – 9:30 PM.",
+          "4.9★ rated gym in Hasthinapuram, Chromepet (798 reviews). Women-owned. Strength, HIIT, personal training. Open 4:30 AM – 9:30 PM daily.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_IN" },
+      { property: "og:site_name", content: "Total Fitness Studio" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Total Fitness Studio — Chromepet" },
+      {
+        name: "twitter:title",
+        content: "Total Fitness Studio — Chromepet Gym · 4.9★",
+      },
       {
         name: "twitter:description",
-        content: "4.9 ★ gym in Chromepet. Women-owned. Open 4:30 AM – 9:30 PM daily.",
+        content:
+          "Highest-rated gym in Chromepet. Women-owned. Open 4:30 AM – 9:30 PM. Call +91 99419 42942.",
       },
     ],
     links: [
