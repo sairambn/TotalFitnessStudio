@@ -1,96 +1,81 @@
 # Total Fitness Studio
 
-Modern, high-conversion website for **Total Fitness Studio** — Chromepet, Chennai.
+Production-oriented marketing site for a Chromepet (Chennai) gym — **4.9★**, women-owned, open 4:30 AM–9:30 PM.
 
-**Live focus:** Strength training · HIIT · Personal Training  
-**Rating:** 4.9 ★ · 755 Google interactions  
-**Women-owned · Open 4:30 AM – 9:30 PM daily**
+Built as a **portfolio-grade** full-stack front-end project: modern React, typed routing, SSR, accessibility, and local SEO.
+
+**Live repo:** [github.com/sairambn/TotalFitnessStudio](https://github.com/sairambn/TotalFitnessStudio)
 
 ---
 
-## Tech Stack
+## Highlights (for recruiters)
+
+- **React 19 + TanStack Start** — file-based, type-safe routing and SSR  
+- **Interactive product UI** — pointer + keyboard before/after comparison, animated stats, 3D hover cards  
+- **Design system** — brand token `#E2FF00`, display/mono type scale, dark-first UI  
+- **Accessibility** — focus rings, ARIA sliders, `prefers-reduced-motion`  
+- **Local SEO** — Schema.org `GymAndFitnessClub`, Open Graph / Twitter meta  
+- **Deployable** — Nitro `vercel` preset, `vercel.json`, Bun install/build  
+
+See [ENGINEERING.md](./ENGINEERING.md) for architecture and interview-oriented notes.
+
+---
+
+## Tech stack
 
 | Layer | Technology |
 |-------|------------|
-| Framework | TanStack Start (React 19) |
-| Routing | TanStack Router |
-| Styling | Tailwind CSS v4 + custom design tokens |
-| UI primitives | Radix UI + shadcn/ui |
-| Language | TypeScript |
-| Runtime / bundler | Bun + Vite |
-| Fonts | Bebas Neue · Inter · JetBrains Mono |
+| UI | React 19, TypeScript |
+| Framework | TanStack Start + TanStack Router |
+| Styling | Tailwind CSS v4 |
+| Components | shadcn/ui (Radix) |
+| Build | Vite 8, Bun |
+| Deploy | Vercel (Nitro preset) |
 
 ---
 
-## Features
-
-- **Cinematic hero** with high-impact typography and live status panel
-- **Programs** (Strength, Cardio/HIIT, Personal Training)
-- **Coach profiles** with hover effects
-- **Interactive before/after transformation sliders** with count-up stats
-- **Verified Google reviews** section
-- **Membership tiers** with clear CTAs
-- **Location + embedded map**
-- **FAQ accordion**
-- **Sticky mobile Call + WhatsApp bar**
-- **LocalBusiness JSON-LD** for SEO
-- Fully responsive (mobile-first)
-
----
-
-## Getting Started
+## Quick start
 
 ```bash
-# Install dependencies
+git clone https://github.com/sairambn/TotalFitnessStudio.git
+cd TotalFitnessStudio
 bun install
-
-# Start development server
 bun run dev
+```
 
-# Production build
+Open the URL printed in the terminal (usually `http://localhost:3000`).
+
+```bash
 bun run build
-
-# Preview production build
 bun run preview
 ```
 
 ---
 
-## Project Structure
+## Deploy on Vercel
+
+1. [Import this repo](https://vercel.com/new/import?s=https://github.com/sairambn/TotalFitnessStudio)  
+2. Install: `bun install` · Build: `bun run build`  
+3. Deploy  
+
+After you have a production URL, set it in structured data (`src/lib/site.ts` / JSON-LD) so Google Local sees the canonical domain.
+
+---
+
+## Project layout
 
 ```
 src/
-├── assets/              # Images (hero, trainers, transformations)
-├── components/
-│   ├── transformations.tsx   # Interactive before/after section
-│   └── ui/                   # shadcn/ui primitives
-├── hooks/
-├── lib/                 # Utils + error reporting
-├── routes/
-│   ├── __root.tsx       # Root layout, SEO meta, error boundaries
-│   └── index.tsx        # Main landing page
-├── styles.css           # Tailwind + design tokens
-└── ...
+  routes/index.tsx     # Landing page
+  components/          # Feature sections (transformations, …)
+  lib/site.ts          # Business + SEO constants
+  styles.css           # Design tokens + global polish
 ```
 
 ---
 
-## Brand Tokens
+## Author
 
-- **Brand accent:** `#E2FF00` (neon lime)
-- **Background:** `#0F0F0F` (near-black)
-- **Fonts:** Display = Bebas Neue · Body = Inter · Mono = JetBrains Mono
+Built and maintained by **[@sairambn](https://github.com/sairambn)**.
 
----
-
-## Contact (Hard-coded in app)
-
-- **Phone:** +91 99419 42942
-- **Address:** No. 35-B, Vijaya Saras Building, 3rd Floor, Rajendra Prasad Road, Gayathri Nagar (above Axis Bank), Hasthinapuram, Chromepet, Chennai 600044
-- **Hours:** 4:30 AM – 9:30 PM (Mon–Sun)
-
----
-
-## License
-
-Private project for Total Fitness Studio.
+If you are hiring for front-end / full-stack roles (including Google or Apple-adjacent product teams), this repo is intended to show end-to-end product engineering: UX, performance awareness, a11y, and clean structure — not only visual design.
