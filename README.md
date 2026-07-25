@@ -1,40 +1,30 @@
-# Total Fitness Studio
+# Total Fitness Studio — Product engineering case study
 
-Production-oriented marketing site for a Chromepet (Chennai) gym — **4.9★**, women-owned, open 4:30 AM–9:30 PM.
+> **Role signal:** Front-end / full-stack product engineer  
+> **Stack:** React 19 · TypeScript · TanStack Start · Tailwind v4 · Vite · Bun · Vercel  
+> **Domain:** Local business conversion site (gym, Chromepet, Chennai)
 
-Built as a **portfolio-grade** full-stack front-end project: modern React, typed routing, SSR, accessibility, and local SEO.
-
-**Live repo:** [github.com/sairambn/TotalFitnessStudio](https://github.com/sairambn/TotalFitnessStudio)
-
----
-
-## Highlights (for recruiters)
-
-- **React 19 + TanStack Start** — file-based, type-safe routing and SSR  
-- **Interactive product UI** — pointer + keyboard before/after comparison, animated stats, 3D hover cards  
-- **Design system** — brand token `#E2FF00`, display/mono type scale, dark-first UI  
-- **Accessibility** — focus rings, ARIA sliders, `prefers-reduced-motion`  
-- **Local SEO** — Schema.org `GymAndFitnessClub`, Open Graph / Twitter meta  
-- **Deployable** — Nitro `vercel` preset, `vercel.json`, Bun install/build  
-
-See [ENGINEERING.md](./ENGINEERING.md) for architecture and interview-oriented notes.
+Live listing context: **4.9★ · ~798 reviews** — women-owned gym in Hasthinapuram / Chromepet.
 
 ---
 
-## Tech stack
+## Why this project (for startup hiring managers)
 
-| Layer | Technology |
-|-------|------------|
-| UI | React 19, TypeScript |
-| Framework | TanStack Start + TanStack Router |
-| Styling | Tailwind CSS v4 |
-| Components | shadcn/ui (Radix) |
-| Build | Vite 8, Bun |
-| Deploy | Vercel (Nitro preset) |
+Startups don’t hire “pretty pages.” They hire people who **own outcomes**. This repo is structured to show:
+
+| Signal | What’s in the code |
+|--------|---------------------|
+| **Product sense** | Conversion-first layout: hero CTA, sticky call/WhatsApp, pricing, FAQ, map |
+| **Craft** | Design system (`#E2FF00` / dark), motion with `prefers-reduced-motion`, a11y sliders |
+| **Engineering** | Typed routes, shared `site` config, SSR error boundaries, Vercel/Nitro deploy path |
+| **SEO / growth** | Schema.org `GymAndFitnessClub`, geo meta, review social proof aligned to public listings |
+| **Ownership** | Single source of truth for business data; docs for next engineer |
+
+**This alone is not a 12 LPA offer** — treat it as one strong project on a resume that also has internships, shipped features, or measurable impact elsewhere.
 
 ---
 
-## Quick start
+## Quick demo
 
 ```bash
 git clone https://github.com/sairambn/TotalFitnessStudio.git
@@ -43,39 +33,53 @@ bun install
 bun run dev
 ```
 
-Open the URL printed in the terminal (usually `http://localhost:3000`).
+Production build:
 
 ```bash
-bun run build
-bun run preview
+bun run build && bun run preview
 ```
+
+Deploy: [Vercel import](https://vercel.com/new/import?s=https://github.com/sairambn/TotalFitnessStudio)
 
 ---
 
-## Deploy on Vercel
+## Technical highlights
 
-1. [Import this repo](https://vercel.com/new/import?s=https://github.com/sairambn/TotalFitnessStudio)  
-2. Install: `bun install` · Build: `bun run build`  
-3. Deploy  
+1. **TanStack Start + React 19** — file-based routing, SSR, typed route tree  
+2. **Interaction design** — before/after comparison (pointer + keyboard), count-up stats, 3D card tilt  
+3. **Motion system** — scroll reveal (`IntersectionObserver`), staggered hero entrance, reduced-motion safe  
+4. **Local conversion** — `tel:` / WhatsApp deep links, sticky mobile CTAs, desktop FAB  
+5. **Maintainability** — `src/lib/site.ts` for phone, hours, ratings, JSON-LD  
 
-After you have a production URL, set it in structured data (`src/lib/site.ts` / JSON-LD) so Google Local sees the canonical domain.
+Details: [ENGINEERING.md](./ENGINEERING.md)
 
 ---
 
-## Project layout
+## How to talk about this in interviews (12 LPA track)
 
-```
-src/
-  routes/index.tsx     # Landing page
-  components/          # Feature sections (transformations, …)
-  lib/site.ts          # Business + SEO constants
-  styles.css           # Design tokens + global polish
-```
+Use **STAR**, not “I built a gym website”:
+
+- **Situation:** Local gym needs a site that converts Google searchers (4.9★ brand) into calls/trials.  
+- **Task:** Ship a fast, mobile-first marketing site with SEO and clear CTAs.  
+- **Action:** Chose TanStack Start for SSR + DX; built design tokens; interactive transformations; Schema.org; WhatsApp/tel conversion paths.  
+- **Result:** (After deploy) share real metrics — e.g. Lighthouse scores, bounce rate, call clicks. *Without metrics, say what you would measure.*
+
+Be ready for:
+
+- How would you A/B test the primary CTA?  
+- How do you keep LCP fast with large images?  
+- How would you add a booking form + backend without rewriting the app?
+
+---
+
+## Resume one-liner (copy/paste)
+
+> **Total Fitness Studio** — Built a production-oriented React/TypeScript marketing site for a 4.9★ Chromepet gym: SSR, local SEO (Schema.org), conversion CTAs (call/WhatsApp), and accessible interactive before/after UI. Stack: TanStack Start, Tailwind v4, Vite, Vercel.
 
 ---
 
 ## Author
 
-Built and maintained by **[@sairambn](https://github.com/sairambn)**.
+**[@sairambn](https://github.com/sairambn)** — open to **startup front-end / product engineering** roles.
 
-If you are hiring for front-end / full-stack roles (including Google or Apple-adjacent product teams), this repo is intended to show end-to-end product engineering: UX, performance awareness, a11y, and clean structure — not only visual design.
+If you’re hiring: the interesting part isn’t the gym theme — it’s end-to-end ownership of UI, performance awareness, SEO, and deployability.
