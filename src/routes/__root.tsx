@@ -11,6 +11,9 @@ import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 
+const FONT_CSS =
+  "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark px-4 text-white">
@@ -68,9 +71,6 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-const FONT_CSS =
-  "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap";
-
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -123,19 +123,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      // Non-render-blocking font load (media print + onload) for better Speed Index / FCP
       {
         rel: "stylesheet",
         href: FONT_CSS,
-        media: "print",
-        // @ts-expect-error TanStack head supports onload via attrs in practice
-        onLoad: "this.media='all'",
-      },
-      // Fallback for no-JS
-      {
-        rel: "stylesheet",
-        href: FONT_CSS,
-        // noscript equivalent handled by the print trick + browser fallback
       },
     ],
   }),
@@ -150,10 +140,6 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
-        {/* Critical: ensure fonts still apply if the media trick is ignored */}
-        <noscript>
-          <link rel="stylesheet" href={FONT_CSS} />
-        </noscript>
       </head>
       <body className="bg-dark text-white antialiased">
         {children}
