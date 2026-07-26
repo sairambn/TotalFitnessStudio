@@ -138,7 +138,7 @@ function Index() {
                     <div className="h-px flex-grow bg-white/20" />
                   </div>
                   <p className="mt-8 max-w-lg text-white/70 leading-relaxed animate-fade-up delay-300">
-                    Chennai&apos;s highest-rated fitness studio. Serious equipment, proven coaching, and a
+                    Chennai's highest-rated fitness studio. Serious equipment, proven coaching, and a
                     community that shows up at 4:30 AM. Rated{" "}
                     <span className="text-brand font-bold">{SITE.rating} ★</span> across{" "}
                     {SITE.reviewCount} verified Google interactions.
@@ -698,7 +698,7 @@ function Index() {
               <span className="text-brand">Every Day.</span>
             </h2>
             <p className="text-white/50 mb-12 max-w-xl mx-auto">
-              Chennai&apos;s most-loved fitness studio is one call away. Book your first session free.
+              Chennai's most-loved fitness studio is one call away. Book your first session free.
             </p>
             <a
               href={telUrl()}
@@ -710,7 +710,17 @@ function Index() {
             <div className="mt-20 pt-8 border-t border-white/10 grid md:grid-cols-3 gap-6 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
               <p>© {new Date().getFullYear()} {SITE.name}</p>
               <p className="md:text-center">{SITE.addressShort}</p>
-              <p className="md:text-right">Women-Owned · LGBTQ+ · {SITE.rating} ★</p>
+              <p className="md:text-right">
+                Designed by{" "}
+                <a
+                  href="https://github.com/sairambn/naiyapudai-portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand hover:underline"
+                >
+                  நையப்புடை
+                </a>
+              </p>
             </div>
           </div>
         </footer>
