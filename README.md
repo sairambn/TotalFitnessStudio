@@ -1,5 +1,12 @@
 # Total Fitness Studio
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-total--fitness--studio--livid.vercel.app-black?style=for-the-badge&logo=vercel)](https://total-fitness-studio-livid.vercel.app/)
+[![React 19](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![TanStack Start](https://img.shields.io/badge/TanStack-Start-FF4154?style=flat-square)](https://tanstack.com/start)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+
 > **Role signal:** Front-end / full-stack product engineer  
 > **Stack:** React 19 · TypeScript · TanStack Start · Tailwind v4 · Vite · Nitro · Vercel  
 > **Domain:** Local business conversion site — gym in Chromepet, Chennai
@@ -29,13 +36,15 @@ Treat this as one strong portfolio piece — not a full offer by itself.
 ```bash
 git clone https://github.com/sairambn/TotalFitnessStudio.git
 cd TotalFitnessStudio
-npm install   # or: bun install
-npm run dev   # http://localhost:3000
+bun install   # or: npm install
+bun run dev   # http://localhost:3000
 ```
 
 ```bash
-npm run build && npm run preview
+bun run build && bun run preview
 ```
+
+> Requires [Bun](https://bun.sh) or Node 20+.
 
 ---
 
@@ -79,5 +88,9 @@ Expect questions on A/B testing CTAs, LCP with large images, and adding a bookin
 > **Total Fitness Studio** — Production React/TypeScript marketing site for a 4.9★ Chromepet gym: SSR, Schema.org local SEO, call/WhatsApp conversion CTAs, accessible before/after UI. Stack: TanStack Start, Tailwind v4, Vite, Nitro, Vercel.
 
 ---
+
+## License
+
+MIT © [Sairam BN](https://github.com/sairambn)
 
 **[@sairambn](https://github.com/sairambn)** — open to startup front-end / product engineering roles.
