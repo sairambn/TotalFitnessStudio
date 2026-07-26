@@ -6,6 +6,8 @@
 
 Live listing context: **4.9★ · ~798 reviews** — women-owned gym in Hasthinapuram / Chromepet.
 
+> **Current status (July 2026):** Source is complete and ready to run locally. Production Vercel deployment needs a fresh import / redeploy (previous production URL returned 404). Follow the deploy steps below to get a live demo URL.
+
 ---
 
 ## Why this project (for startup hiring managers)
@@ -24,7 +26,7 @@ Startups don’t hire “pretty pages.” They hire people who **own outcomes**.
 
 ---
 
-## Quick start
+## Quick start (local)
 
 ```bash
 git clone https://github.com/sairambn/TotalFitnessStudio.git
@@ -33,7 +35,7 @@ npm install   # or: bun install
 npm run dev   # http://localhost:3000
 ```
 
-Production build:
+Production build check:
 
 ```bash
 npm run build && npm run preview
@@ -41,16 +43,19 @@ npm run build && npm run preview
 
 ---
 
-## Deploy to Vercel (required for a live demo)
+## Deploy to Vercel (get a live demo)
 
-1. Open [vercel.com/new](https://vercel.com/new)
-2. Import **`sairambn/TotalFitnessStudio`**
-3. Confirm **Framework Preset = TanStack Start** (set via `vercel.json`)
-4. Click **Deploy**
+The project is configured for TanStack Start + Nitro.
 
-After the first successful deploy, copy the production URL and pin it here / on your resume.
+1. Go to [vercel.com/new](https://vercel.com/new)
+2. Import the GitHub repo **`sairambn/TotalFitnessStudio`**
+3. Confirm **Framework Preset = TanStack Start** (already set in `vercel.json`)
+4. Leave Install / Build commands as-is (`npm install` / `npm run build`)
+5. Click **Deploy**
 
-One-click import: [Import this repo on Vercel](https://vercel.com/new/clone?repository-url=https://github.com/sairambn/TotalFitnessStudio)
+One-click: [Import this repo on Vercel](https://vercel.com/new/clone?repository-url=https://github.com/sairambn/TotalFitnessStudio)
+
+After a successful deploy, copy the production URL and update this README + your resume.
 
 ---
 
