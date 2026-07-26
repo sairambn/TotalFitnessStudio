@@ -1,6 +1,7 @@
 # Total Fitness Studio
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-total--fitness--studio--livid.vercel.app-black?style=for-the-badge&logo=vercel)](https://total-fitness-studio-livid.vercel.app/)
+[![CI](https://github.com/sairambn/TotalFitnessStudio/actions/workflows/ci.yml/badge.svg)](https://github.com/sairambn/TotalFitnessStudio/actions/workflows/ci.yml)
 [![React 19](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![TanStack Start](https://img.shields.io/badge/TanStack-Start-FF4154?style=flat-square)](https://tanstack.com/start)
