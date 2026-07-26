@@ -1,6 +1,18 @@
 {
   "name": "total-fitness-studio",
+  "version": "1.0.0",
   "private": true,
+  "description": "Production React/TypeScript marketing site for a 4.9★ Chromepet gym — SSR, Schema.org local SEO, call/WhatsApp conversion CTAs, accessible before/after UI.",
+  "homepage": "https://total-fitness-studio-livid.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sairambn/TotalFitnessStudio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sairambn/TotalFitnessStudio/issues"
+  },
+  "author": "Sairam BN <bnsairam14@gmail.com>",
+  "license": "MIT",
   "sideEffects": false,
   "type": "module",
   "scripts": {
@@ -9,7 +21,8 @@
     "preview": "vite preview",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
