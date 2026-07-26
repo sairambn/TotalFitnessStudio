@@ -10,7 +10,6 @@ First client deliverable for **[Naiyapudai](https://naiyapudai.vercel.app/)**
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![TanStack Start](https://img.shields.io/badge/TanStack-Start-FF4154?style=flat-square)](https://tanstack.com/start)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 **Live** → [total-fitness-studio-livid.vercel.app](https://total-fitness-studio-livid.vercel.app/)  
 **Maps** → [Google Maps listing](https://maps.app.goo.gl/M1VcPF2LMbexLFuE9)  
@@ -104,9 +103,5 @@ Deeper notes → [ENGINEERING.md](./ENGINEERING.md) · Career framing → [CAREE
 > **Total Fitness Studio** (first Naiyapudai client) — Production React/TypeScript marketing site for a 4.9★ Chromepet gym: SSR, Schema.org local SEO, Google Maps alignment, call/WhatsApp CTAs. Stack: TanStack Start, Tailwind v4, Vite, Nitro, Vercel.
 
 ---
-
-## License
-
-MIT © [Sairam BN](https://github.com/sairambn) — portfolio-friendly for the client deliverable code.
 
 Built by **[Naiyapudai](https://naiyapudai.vercel.app/)** · [@sairambn](https://github.com/sairambn)
