@@ -7,10 +7,9 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -20,7 +19,7 @@ function NotFoundComponent() {
         <h1 className="font-display text-7xl text-brand">404</h1>
         <h2 className="mt-4 font-display text-2xl uppercase tracking-wide">Page not found</h2>
         <p className="mt-2 text-sm text-white/50">
-          The page you&apos;re looking for doesn&apos;t exist or has been moved.
+          The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="mt-8">
           <Link
@@ -38,15 +37,12 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark px-4 text-white">
       <div className="max-w-md text-center">
         <p className="font-mono text-brand text-xs uppercase tracking-[0.3em] mb-4">System Fault</p>
-        <h1 className="font-display text-3xl uppercase tracking-wide">This page didn&apos;t load</h1>
+        <h1 className="font-display text-3xl uppercase tracking-wide">This page didn't load</h1>
         <p className="mt-2 text-sm text-white/50">
           Something went wrong on our end. Try refreshing or head back home.
         </p>
