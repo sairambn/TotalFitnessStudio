@@ -20,31 +20,31 @@ type Transformation = {
 
 const TRANSFORMATIONS: Transformation[] = [
   {
-    name: "Rahul S.",
-    months: 12,
-    kg: 38,
-    badge: "Champion",
+    name: "Karthik R.",
+    months: 14,
+    kg: 34,
+    badge: "Beast Mode",
     program: "Strength + Cut",
-    trainer: "Coach Priya",
+    trainer: "Coach Arjun",
     before: transform1Before,
     after: transform1After,
   },
   {
-    name: "Anitha K.",
-    months: 8,
-    kg: 22,
-    badge: "Reborn",
-    program: "HIIT + Mobility",
-    trainer: "Coach Divya",
+    name: "Suresh M.",
+    months: 10,
+    kg: 12,
+    badge: "Shredded",
+    program: "Hypertrophy + HIIT",
+    trainer: "Coach Priya",
     before: transform2Before,
     after: transform2After,
   },
   {
-    name: "Vignesh M.",
-    months: 14,
-    kg: 31,
-    badge: "Powerhouse",
-    program: "Powerlifting",
+    name: "Praveen K.",
+    months: 16,
+    kg: 34,
+    badge: "Unstoppable",
+    program: "Power + Recomp",
     trainer: "Coach Arjun",
     before: transform3Before,
     after: transform3After,
@@ -292,8 +292,7 @@ function TransformationCard({ t, featured = false }: { t: Transformation; featur
 
             {featured && (
               <p className="text-white/70 text-lg leading-relaxed mb-8 border-l-2 pl-4 my-6" style={{ borderColor: ACCENT }}>
-                "Walked in barely finishing a set of 10. Now I'm competing at the national level.
-                The coaches never let me settle."
+                "From 120 kg to a completely new body. The coaches pushed me every session. Real work. Real results. No shortcuts."
               </p>
             )}
 
@@ -339,7 +338,7 @@ function TransformationCard({ t, featured = false }: { t: Transformation; featur
                 <>
                   <span>Achievement</span>
                   <span className="text-white/90 text-right" style={{ color: ACCENT }}>
-                    National Powerlifting Qualifier
+                    Complete Body Recomp
                   </span>
                 </>
               )}
@@ -454,14 +453,14 @@ export function TransformationSection() {
           <div className="flex gap-12 whitespace-nowrap animate-marquee font-display text-4xl md:text-5xl">
             {Array.from({ length: 2 }).flatMap((_, k) =>
               [
-                "38 KG LOST",
-                "12 MONTHS",
+                "34 KG LOST",
+                "16 MONTHS",
                 "STRONGER EVERY DAY",
-                "22 KG LOST",
+                "12 KG LOST",
                 "1000+ WORKOUTS",
-                "31 KG LOST",
-                "NATIONAL POWERLIFTING",
                 "REAL RESULTS",
+                "COMPLETE RECOMP",
+                "CHROMEPET STRONG",
               ].map((label, i) => (
                 <span
                   key={`${k}-${i}`}
