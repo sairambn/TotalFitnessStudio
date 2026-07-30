@@ -14,6 +14,8 @@ import appCss from "../styles.css?url";
 const FONT_CSS =
   "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap";
 
+const SITE_URL = "https://total-fitness-studio-livid.vercel.app";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark px-4 text-white">
@@ -106,6 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "4.9★ rated gym in Hasthinapuram, Chromepet (798 reviews). Women-owned. Strength, HIIT, personal training. Open 4:30 AM – 9:30 PM daily.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: SITE_URL },
       { property: "og:locale", content: "en_IN" },
       { property: "og:site_name", content: "Total Fitness Studio" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -121,6 +124,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: SITE_URL },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
