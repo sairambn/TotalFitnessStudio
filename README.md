@@ -2,10 +2,10 @@
 
 # Total Fitness Studio
 
-**Production conversion site for a 4.9★ Chromepet gym**  
+**Live conversion site for a 4.9★ Chromepet gym**  
 First client deliverable for **[Naiyapudai](https://naiyapudai.vercel.app/)**
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-total--fitness--studio--livid.vercel.app-black?style=for-the-badge&logo=vercel)](https://total-fitness-studio-livid.vercel.app/)
+[![Live](https://img.shields.io/badge/Live-total--fitness--studio--livid.vercel.app-black?style=for-the-badge&logo=vercel)](https://total-fitness-studio-livid.vercel.app/)
 [![React 19](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![TanStack Start](https://img.shields.io/badge/TanStack-Start-FF4154?style=flat-square)](https://tanstack.com/start)
@@ -13,8 +13,8 @@ First client deliverable for **[Naiyapudai](https://naiyapudai.vercel.app/)**
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg?style=flat-square)](LICENSE)
 
 **Live** → [total-fitness-studio-livid.vercel.app](https://total-fitness-studio-livid.vercel.app/)  
-**Maps** → [Google Maps listing](https://maps.app.goo.gl/M1VcPF2LMbexLFuE9)  
-**Case study** → [Naiyapudai → Total Fitness](https://naiyapudai.vercel.app/work/total-fitness-studio)
+**Maps** → [Google Maps](https://maps.app.goo.gl/M1VcPF2LMbexLFuE9)  
+**Case study** → [Naiyapudai work](https://naiyapudai.vercel.app/work/total-fitness-studio)
 
 </div>
 
@@ -22,14 +22,14 @@ First client deliverable for **[Naiyapudai](https://naiyapudai.vercel.app/)**
 
 ## Why this project matters
 
-This is a **real client site**, not a tutorial demo. It demonstrates end-to-end ownership of outcomes:
+Real client work, not a tutorial. End-to-end ownership of outcomes:
 
 | Signal | Evidence in the code |
 |--------|----------------------|
 | **Product sense** | Hero CTA, sticky call/WhatsApp, pricing, FAQ, map embed |
-| **Craft** | Design system (`#E2FF00` / dark), reduced-motion, a11y interactions |
+| **Craft** | Design system (`#E2FF00` / dark), reduced-motion, accessible interactions |
 | **Engineering** | Typed routes, shared `site` config, SSR error boundaries, Nitro + Vercel |
-| **SEO / growth** | Schema.org `GymAndFitnessClub`, geo meta, local keywords, review social proof |
+| **SEO / growth** | Schema.org `GymAndFitnessClub`, geo meta, local keywords, review proof |
 | **Maps** | GBP-aligned address, hours, coords, Maps deep link |
 | **Ownership** | Single source of truth in [`src/lib/site.ts`](./src/lib/site.ts) |
 
@@ -37,15 +37,15 @@ This is a **real client site**, not a tutorial demo. It demonstrates end-to-end 
 
 ---
 
-## SEO & Google Maps (what was delivered)
+## SEO and Google Maps
 
-- **Schema.org** `GymAndFitnessClub` with geo, hours, aggregate rating, amenities
-- **Local keywords:** Chromepet, Hasthinapuram, Chitlapakkam, unisex gym, Axis Bank landmark
-- **Meta + canonicals** for clean indexation
-- **Google Maps / GBP** aligned with site (address, hours, category, Maps URL)
-- **Conversion:** `tel:` and WhatsApp deep links on every key surface
+- Schema.org `GymAndFitnessClub` with geo, hours, aggregate rating, amenities
+- Local keywords: Chromepet, Hasthinapuram, Chitlapakkam, unisex gym, Axis Bank landmark
+- Meta + canonicals for clean indexation
+- Google Maps / GBP aligned with site (address, hours, category, Maps URL)
+- Conversion: `tel:` and WhatsApp deep links on key surfaces
 
-All business data (phone, hours, address, rating) lives in one place: [`src/lib/site.ts`](./src/lib/site.ts).
+All business data lives in one place: [`src/lib/site.ts`](./src/lib/site.ts).
 
 ---
 
@@ -54,23 +54,23 @@ All business data (phone, hours, address, rating) lives in one place: [`src/lib/
 ```bash
 git clone https://github.com/sairambn/TotalFitnessStudio.git
 cd TotalFitnessStudio
-bun install          # or: npm install
-bun run dev          # http://localhost:3000
+bun install
+bun run dev
 ```
 
 ```bash
 bun run build && bun run preview
 ```
 
-> Requires [Bun](https://bun.sh) or Node 20+.
+Requires [Bun](https://bun.sh) or Node 20+.
 
 ---
 
-## Deploy to Vercel
+## Deploy on Vercel
 
 1. Open [vercel.com/new](https://vercel.com/new)
-2. Import **`sairambn/TotalFitnessStudio`**
-3. Framework Preset = **TanStack Start** (`vercel.json`)
+2. Import `sairambn/TotalFitnessStudio`
+3. Framework preset: **TanStack Start** (`vercel.json`)
 4. Deploy
 
 [One-click import](https://vercel.com/new/clone?repository-url=https://github.com/sairambn/TotalFitnessStudio)
@@ -92,10 +92,10 @@ Deeper notes → [ENGINEERING.md](./ENGINEERING.md) · Career framing → [CAREE
 
 ## Interview talking points (STAR)
 
-- **Situation** — Gym needs a site that converts Google searchers into calls/trials; Maps presence must match the brand.
+- **Situation** — Gym needs a site that converts Google searchers into calls and trials; Maps must match the brand.
 - **Task** — Own UX, performance, local SEO, Schema.org, and Maps alignment.
-- **Action** — TanStack Start SSR · design tokens · interactive transformations · Schema.org · WhatsApp/tel · GBP/Maps optimization · Nitro on Vercel.
-- **Result** — Live conversion site + structured local SEO foundation (measure Lighthouse, CTA clicks, Maps engagement).
+- **Action** — TanStack Start SSR, design tokens, interactive transformations, Schema.org, WhatsApp/tel, GBP optimization, Nitro on Vercel.
+- **Result** — Live conversion site with a structured local SEO foundation.
 
 ---
 
@@ -108,6 +108,6 @@ Deeper notes → [ENGINEERING.md](./ENGINEERING.md) · Career framing → [CAREE
 ## License
 
 **Proprietary.** All rights reserved © Naiyapudai / Sairam BN.  
-See [LICENSE](./LICENSE). Unauthorized use or redistribution is prohibited.
+See [LICENSE](./LICENSE).
 
 Built by **[Naiyapudai](https://naiyapudai.vercel.app/)** · [@sairambn](https://github.com/sairambn)
