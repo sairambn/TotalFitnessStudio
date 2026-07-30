@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import transform1Before from "@/assets/transform-1-before.jpg";
+import transform1Before from "@/assets/transform-3-before.jpg";
 import transform1After from "@/assets/transform-1-after.jpg";
 import transform2Before from "@/assets/transform-2-before.jpg";
 import transform2After from "@/assets/transform-2-after.jpg";
@@ -26,6 +26,7 @@ const TRANSFORMATIONS: Transformation[] = [
     badge: "Beast Mode",
     program: "Strength + Cut",
     trainer: "Coach Arjun",
+    // transform-1-before.jpg is corrupt (256 bytes). Use a solid photo until replaced.
     before: transform1Before,
     after: transform1After,
   },
@@ -59,7 +60,10 @@ const ACCENT = "#E2FF00";
 function useCountUp(target: number, active: boolean, duration = 1600) {
   const [val, setVal] = useState(0);
   useEffect(() => {
-    if (!active) return;
+    if (!active) {
+      setVal(0);
+      return;
+    }
     let raf = 0;
     const start = performance.now();
     const tick = (t: number) => {
