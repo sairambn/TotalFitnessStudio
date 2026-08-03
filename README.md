@@ -110,4 +110,4 @@ Deeper notes → [ENGINEERING.md](./ENGINEERING.md) · Career framing → [CAREE
 **Proprietary.** All rights reserved © Naiyapudai / Sairam BN.  
 See [LICENSE](./LICENSE).
 
-Built by **[Naiyapudai](https://naiyapudai.vercel.app/)** · [@sairambn](https://github.com/sairambn)
+Built by **[Naiyapudai](https://naiyapudai.vercel.app/)** · [@sairambn](https://github.com/sairambn) · **SR**
