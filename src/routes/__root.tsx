@@ -16,9 +16,6 @@ const FONT_CSS =
 
 const SITE_URL = "https://total-fitness-studio-livid.vercel.app";
 
-const SR_FAVICON =
-  "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23111827'/><text x='50' y='68' text-anchor='middle' fill='%23f8fafc' font-size='48' font-family='system-ui,sans-serif' font-weight='700'>SR</text></svg>";
-
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark px-4 text-white">
@@ -128,7 +125,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "canonical", href: SITE_URL },
-      { rel: "icon", href: SR_FAVICON, type: "image/svg+xml" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
