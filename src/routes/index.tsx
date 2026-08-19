@@ -1,11 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { TransformationSection } from "@/components/transformations";
-import { SITE, telUrl, whatsappUrl, WHATSAPP_MESSAGES, localBusinessJsonLd } from "@/lib/site";
+import {
+  SITE,
+  telUrl,
+  whatsappUrl,
+  WHATSAPP_MESSAGES,
+  localBusinessJsonLd,
+} from "@/lib/site";
 import { ArchGallery } from "@/components/ui/arch-gallery";
 import transform1After from "@/assets/transform-1-after.jpg";
 import transform2After from "@/assets/transform-2-after.jpg";
 import transform3After from "@/assets/transform-3-after.jpg";
-// using existing asset
 import heroAthlete from "@/assets/hero-athlete.jpg";
 import transform1Before from "@/assets/transform-3-before.jpg";
 import transform2Before from "@/assets/transform-2-before.jpg";
@@ -31,8 +36,8 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify(
           localBusinessJsonLd(
             "https://total-fitness-studio-livid.vercel.app",
-            "https://total-fitness-studio-livid.vercel.app/og.jpg"
-          )
+            "https://total-fitness-studio-livid.vercel.app/og.jpg",
+          ),
         ),
       },
     ],
@@ -42,25 +47,56 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   const galleryItems = [
-    { image: { src: transform1After, alt: "After transformation strong build" } },
-    { image: { src: transform2After, alt: "After transformation shredded physique" } },
-    { image: { src: transform3After, alt: "Featured after transformation result" } },
-    { image: { src: transform3After, alt: "Powerful flex at Total Fitness Studio" } },
-    { image: { src: heroAthlete, alt: "Athlete training hard in the gym" } },
-    { image: { src: transform1Before, alt: "Starting point before transformation" } },
-    { image: { src: transform2Before, alt: "Before progress photo" } },
+    {
+      image: { src: transform1After, alt: "After transformation strong build" },
+    },
+    {
+      image: {
+        src: transform2After,
+        alt: "After transformation shredded physique",
+      },
+    },
+    {
+      image: {
+        src: transform3After,
+        alt: "Featured after transformation result",
+      },
+    },
+    {
+      image: {
+        src: transform3After,
+        alt: "Powerful flex at Total Fitness Studio",
+      },
+    },
+    {
+      image: { src: heroAthlete, alt: "Athlete training hard in the gym" },
+    },
+    {
+      image: {
+        src: transform1Before,
+        alt: "Starting point before transformation",
+      },
+    },
+    {
+      image: { src: transform2Before, alt: "Before progress photo" },
+    },
   ];
 
   return (
     <div className="min-h-screen bg-dark text-white font-sans">
-      {/* Sticky top bar */}
       <header className="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-dark/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-          <a href="/" className="font-display text-2xl tracking-wide text-brand">
+          <a
+            href="/"
+            className="font-display text-2xl tracking-wide text-brand"
+          >
             TOTAL FITNESS
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
-            <a href="#transformations" className="hover:text-brand transition-colors">
+            <a
+              href="#transformations"
+              className="hover:text-brand transition-colors"
+            >
               Results
             </a>
             <a href="#about" className="hover:text-brand transition-colors">
@@ -89,7 +125,6 @@ function HomePage() {
         </div>
       </header>
 
-      {/* Hero */}
       <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand/5 via-transparent to-transparent pointer-events-none" />
         <div className="mx-auto max-w-6xl px-4 md:px-6 text-center">
@@ -104,8 +139,8 @@ function HomePage() {
             Gym
           </h1>
           <p className="mt-8 max-w-xl mx-auto text-white/60 text-lg leading-relaxed animate-fade-up delay-200">
-            Real coaches. Real results. Open {SITE.hours.label}. Located above Axis Bank,
-            Hasthinapuram.
+            Real coaches. Real results. Open {SITE.hours.label}. Located above
+            Axis Bank, Hasthinapuram.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
             <a
@@ -129,7 +164,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Arch Gallery teaser */}
       <section className="py-8 md:py-12 border-y border-white/10 bg-black/40">
         <div className="mx-auto max-w-6xl px-4">
           <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-white/40 mb-2">
@@ -145,12 +179,10 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Full transformations section */}
       <div id="transformations">
         <TransformationSection />
       </div>
 
-      {/* About / location */}
       <section id="about" className="py-24 md:py-32 border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -163,8 +195,9 @@ function HomePage() {
               <span className="text-brand">Real Progress</span>
             </h2>
             <p className="mt-6 text-white/60 leading-relaxed">
-              Unisex gym above Axis Bank in Hasthinapuram. Strength training, personal coaching,
-              and a community that shows up. Open early to late so you can train around your life.
+              Unisex gym above Axis Bank in Hasthinapuram. Strength training,
+              personal coaching, and a community that shows up. Open early to
+              late so you can train around your life.
             </p>
             <ul className="mt-8 space-y-3 text-sm text-white/80">
               <li className="flex items-center gap-3">
@@ -177,7 +210,7 @@ function HomePage() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="h-1.5 w-1.5 rounded-full bg-brand" />
-                Serving {SITE.areasServed.slice(0, 4).join(", ")} & more
+                Serving {SITE.areasServed.slice(0, 4).join(", ")} and more
               </li>
             </ul>
           </div>
@@ -206,7 +239,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Contact CTA */}
       <section id="contact" className="py-20 md:py-28 bg-brand text-dark">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <h2 className="font-display text-4xl md:text-6xl uppercase leading-tight">
@@ -234,16 +266,16 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="border-t border-white/10 py-10">
         <div className="mx-auto max-w-6xl px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
-          <p className="font-display text-xl text-white/80">TOTAL FITNESS STUDIO</p>
+          <p className="font-display text-xl text-white/80">
+            TOTAL FITNESS STUDIO
+          </p>
           <p>{SITE.addressShort}</p>
           <p>© {new Date().getFullYear()} All rights reserved</p>
         </div>
       </footer>
 
-      {/* Mobile sticky CTA */}
       <div className="fixed bottom-0 inset-x-0 z-40 flex md:hidden border-t border-white/10 bg-dark/95 backdrop-blur-md">
         <a
           href={telUrl()}
