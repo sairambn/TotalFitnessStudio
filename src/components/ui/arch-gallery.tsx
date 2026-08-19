@@ -89,10 +89,7 @@ export function ArchGallery({
       role="group"
       aria-label="Image gallery"
     >
-      <div
-        className="relative"
-        style={{ width: stageWidth, height: stageHeight }}
-      >
+      <div className="relative" style={{ width: stageWidth, height: stageHeight }}>
         {deck.map((entry, index) => {
           const offset = index - mid;
           const rotate = offset * ROTATE_STEP;
@@ -116,10 +113,8 @@ export function ArchGallery({
               ? `translate(${translateX}px, ${translateY - HOVER_LIFT}px) rotate(0deg) scale(${HOVER_SCALE})`
               : `translate(${translateX}px, ${translateY}px) rotate(${rotate}deg) scale(1)`,
             zIndex: isHovered ? total + 1 : baseZ,
-            transition:
-              "transform 280ms cubic-bezier(0.22, 1, 0.36, 1), z-index 0ms",
-            boxShadow:
-              "0 12px 28px rgba(0,0,0,0.14), 0 2px 8px rgba(0,0,0,0.08)",
+            transition: "transform 280ms cubic-bezier(0.22, 1, 0.36, 1), z-index 0ms",
+            boxShadow: "0 12px 28px rgba(0,0,0,0.14), 0 2px 8px rgba(0,0,0,0.08)",
             cursor: "pointer",
             backgroundColor: "#f3f4f6",
           };
