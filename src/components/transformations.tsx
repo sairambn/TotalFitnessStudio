@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArchGallery } from "@/components/ui/arch-gallery";
-// using existing asset
 import heroAthlete from "@/assets/hero-athlete.jpg";
 import transform1Before from "@/assets/transform-3-before.jpg";
 import transform1After from "@/assets/transform-1-after.jpg";
@@ -29,7 +28,6 @@ const TRANSFORMATIONS: Transformation[] = [
     badge: "Beast Mode",
     program: "Strength + Cut",
     trainer: "Coach Arjun",
-    // transform-1-before.jpg is corrupt (256 bytes). Use a solid photo until replaced.
     before: transform1Before,
     after: transform1After,
   },
@@ -56,10 +54,8 @@ const TRANSFORMATIONS: Transformation[] = [
   },
 ];
 
-// Unified with site brand token (--color-brand)
 const ACCENT = "#E2FF00";
 
-/* ------------------------ Count-up animated stat ------------------------ */
 function useCountUp(target: number, active: boolean, duration = 1600) {
   const [val, setVal] = useState(0);
   useEffect(() => {
@@ -81,16 +77,7 @@ function useCountUp(target: number, active: boolean, duration = 1600) {
   return val;
 }
 
-/* ------------------------ Before / After slider ------------------------- */
-function BeforeAfter({
-  before,
-  after,
-  name,
-}: {
-  before: string;
-  after: string;
-  name: string;
-}) {
+function BeforeAfter({ before, after, name }: { before: string; after: string; name: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState(50);
   const dragging = useRef(false);
@@ -145,10 +132,7 @@ function BeforeAfter({
         className="absolute inset-0 h-full w-full object-cover"
         draggable={false}
       />
-      <div
-        className="absolute inset-0 overflow-hidden"
-        style={{ width: `${pos}%` }}
-      >
+      <div className="absolute inset-0 overflow-hidden" style={{ width: `${pos}%` }}>
         <img
           src={before}
           alt={`${name} before`}
@@ -175,13 +159,7 @@ function BeforeAfter({
   );
 }
 
-function TransformationCard({
-  t,
-  featured,
-}: {
-  t: Transformation;
-  featured?: boolean;
-}) {
+function TransformationCard({ t, featured }: { t: Transformation; featured?: boolean }) {
   const [active, setActive] = useState(false);
   const kg = useCountUp(t.kg, active);
   const months = useCountUp(t.months, active);
@@ -212,15 +190,11 @@ function TransformationCard({
           <div className="mt-8 flex gap-8">
             <div>
               <p className="font-display text-4xl md:text-5xl text-brand">{kg}</p>
-              <p className="text-[10px] font-mono uppercase tracking-wider text-white/40">
-                kg change
-              </p>
+              <p className="text-[10px] font-mono uppercase tracking-wider text-white/40">kg change</p>
             </div>
             <div>
               <p className="font-display text-4xl md:text-5xl">{months}</p>
-              <p className="text-[10px] font-mono uppercase tracking-wider text-white/40">
-                months
-              </p>
+              <p className="text-[10px] font-mono uppercase tracking-wider text-white/40">months</p>
             </div>
           </div>
         </div>
@@ -233,9 +207,7 @@ export function TransformationSection() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-brand mb-4">
-          Proof of work
-        </p>
+        <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-brand mb-4">Proof of work</p>
         <h2 className="font-display uppercase leading-[0.85] text-white text-6xl sm:text-7xl md:text-[8rem] tracking-tight">
           Real People.
           <br />
@@ -251,13 +223,11 @@ export function TransformationSection() {
         </h2>
 
         <p className="mt-8 max-w-2xl text-white/60 text-lg leading-relaxed">
-          Thousands of hours. Hundreds of kilograms lost. One decision changed
-          everything.
+          Thousands of hours. Hundreds of kilograms lost. One decision changed everything.
           <span className="text-white/90"> Drag the slider </span>
           on any card to see the work. Hover the cards above to explore more shots.
         </p>
 
-        {/* Arch style gallery of transformation shots */}
         <div className="mt-12 mb-4">
           <ArchGallery
             items={[
@@ -276,14 +246,12 @@ export function TransformationSection() {
           />
         </div>
 
-        {/* Cards */}
         <div className="mt-16 grid md:grid-cols-2 gap-6 md:gap-8">
           {TRANSFORMATIONS.map((t) => (
             <TransformationCard key={t.name} t={t} featured={t.featured} />
           ))}
         </div>
 
-        {/* Marquee of achievements */}
         <div className="mt-20 relative overflow-hidden border-y border-white/10 py-6">
           <div className="flex gap-12 whitespace-nowrap animate-marquee font-display text-4xl md:text-5xl">
             {Array.from({ length: 2 }).flatMap((_, k) =>
@@ -307,12 +275,11 @@ export function TransformationSection() {
                 >
                   {label} <span className="text-white/20">✦</span>
                 </span>
-              ))
+              )),
             )}
           </div>
         </div>
 
-        {/* CTA */}
         <div className="mt-24 text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/40 mb-6">
             Your name could be next.
@@ -332,9 +299,7 @@ export function TransformationSection() {
               }}
             >
               <span className="relative z-10">Join Now</span>
-              <span className="relative z-10 transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              <span className="relative z-10 transition-transform group-hover:translate-x-1">→</span>
               <span
                 aria-hidden
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity"
