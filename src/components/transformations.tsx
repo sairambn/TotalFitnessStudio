@@ -207,7 +207,7 @@ export function TransformationSection() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-brand mb-4">Proof of work</p>
+        <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-brand mb-4">Real results</p>
         <h2 className="font-display uppercase leading-[0.85] text-white text-6xl sm:text-7xl md:text-[8rem] tracking-tight">
           Real People.
           <br />
@@ -223,9 +223,9 @@ export function TransformationSection() {
         </h2>
 
         <p className="mt-8 max-w-2xl text-white/60 text-lg leading-relaxed">
-          Thousands of hours. Hundreds of kilograms lost. One decision changed everything.
+          These are members from Chromepet who trained here consistently.
           <span className="text-white/90"> Drag the slider </span>
-          on any card to see the work. Hover the cards above to explore more shots.
+          on any card to see the difference. Hover the cards above for more photos.
         </p>
 
         <div className="mt-12 mb-4">
@@ -282,23 +282,23 @@ export function TransformationSection() {
 
         <div className="mt-24 text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/40 mb-6">
-            Your name could be next.
+            Your name could be next
           </p>
           <h3 className="font-display uppercase leading-[0.9] text-5xl sm:text-6xl md:text-8xl">
             Your Transformation
             <br />
-            <span style={{ color: ACCENT }}>Starts Today.</span>
+            <span style={{ color: ACCENT }}>Starts Today</span>
           </h3>
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#membership"
+              href="#contact"
               className="group relative inline-flex items-center gap-4 px-10 py-5 font-mono text-xs font-bold uppercase tracking-[0.35em] text-black overflow-hidden"
               style={{
                 background: ACCENT,
                 boxShadow: `0 0 60px rgba(226,255,0,0.45)`,
               }}
             >
-              <span className="relative z-10">Join Now</span>
+              <span className="relative z-10">Start Now</span>
               <span className="relative z-10 transition-transform group-hover:translate-x-1">→</span>
               <span
                 aria-hidden
@@ -312,10 +312,10 @@ export function TransformationSection() {
               />
             </a>
             <a
-              href="#programs"
+              href="#about"
               className="inline-flex items-center gap-3 px-8 py-5 font-mono text-xs font-bold uppercase tracking-[0.35em] border border-white/20 text-white hover:border-white/60 transition-colors"
             >
-              Explore Programs
+              Know More
             </a>
           </div>
         </div>

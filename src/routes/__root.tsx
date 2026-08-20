@@ -20,18 +20,18 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark px-4 text-white">
       <div className="max-w-md text-center">
-        <p className="font-mono text-brand text-xs uppercase tracking-[0.3em] mb-4">Error 404</p>
+        <p className="font-mono text-brand text-xs uppercase tracking-[0.3em] mb-4">404</p>
         <h1 className="font-display text-7xl text-brand">404</h1>
         <h2 className="mt-4 font-display text-2xl uppercase tracking-wide">Page not found</h2>
         <p className="mt-2 text-sm text-white/50">
-          The page you're looking for doesn't exist or has been moved.
+          The page you are looking for does not exist or has been moved.
         </p>
         <div className="mt-8">
           <Link
             to="/"
             className="inline-flex items-center justify-center bg-brand px-6 py-3 font-mono text-xs font-bold uppercase tracking-[0.25em] text-dark hover:bg-white transition-colors"
           >
-            Return Home →
+            Back to Home
           </Link>
         </div>
       </div>
@@ -46,10 +46,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-dark px-4 text-white">
       <div className="max-w-md text-center">
-        <p className="font-mono text-brand text-xs uppercase tracking-[0.3em] mb-4">System Fault</p>
-        <h1 className="font-display text-3xl uppercase tracking-wide">This page didn't load</h1>
+        <p className="font-mono text-brand text-xs uppercase tracking-[0.3em] mb-4">Something went wrong</p>
+        <h1 className="font-display text-3xl uppercase tracking-wide">This page did not load</h1>
         <p className="mt-2 text-sm text-white/50">
-          Something went wrong on our end. Try refreshing or head back home.
+          Please try again or go back to the home page.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <button
