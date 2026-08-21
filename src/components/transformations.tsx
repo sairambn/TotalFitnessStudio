@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArchGallery } from "@/components/ui/arch-gallery";
+import StickyScroll from "@/components/ui/sticky-scroll";
 import heroAthlete from "@/assets/hero-athlete.jpg";
 import transform1Before from "@/assets/transform-3-before.jpg";
 import transform1After from "@/assets/transform-1-after.jpg";
 import transform2Before from "@/assets/transform-2-before.jpg";
 import transform2After from "@/assets/transform-2-after.jpg";
-import transform3Before from "@/assets/transform-3-before.jpg";
+import transform3Before from "@/assets/transform-1-before.jpg";
 import transform3After from "@/assets/transform-3-after.jpg";
 
 type Transformation = {
@@ -205,8 +206,11 @@ function TransformationCard({ t, featured }: { t: Transformation; featured?: boo
 
 export function TransformationSection() {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+    <section className="relative overflow-hidden">
+      {/* Immersive sticky gallery */}
+      <StickyScroll />
+
+      <div className="mx-auto max-w-6xl px-4 md:px-6 py-24 md:py-32">
         <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-brand mb-4">Real results</p>
         <h2 className="font-display uppercase leading-[0.85] text-white text-6xl sm:text-7xl md:text-[8rem] tracking-tight">
           Real People.
@@ -225,7 +229,7 @@ export function TransformationSection() {
         <p className="mt-8 max-w-2xl text-white/60 text-lg leading-relaxed">
           These are members from Chromepet who trained here consistently.
           <span className="text-white/90"> Drag the slider </span>
-          on any card to see the difference. Hover the cards above for more photos.
+          on any card to see the difference.
         </p>
 
         <div className="mt-12 mb-4">
@@ -300,16 +304,6 @@ export function TransformationSection() {
             >
               <span className="relative z-10">Start Now</span>
               <span className="relative z-10 transition-transform group-hover:translate-x-1">→</span>
-              <span
-                aria-hidden
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{
-                  background:
-                    "linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent)",
-                  transform: "translateX(-100%)",
-                  animation: "shine 1.2s ease forwards",
-                }}
-              />
             </a>
             <a
               href="#about"
