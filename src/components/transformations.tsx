@@ -6,7 +6,7 @@ import transform1Before from "@/assets/transform-3-before.jpg";
 import transform1After from "@/assets/transform-1-after.jpg";
 import transform2Before from "@/assets/transform-2-before.jpg";
 import transform2After from "@/assets/transform-2-after.jpg";
-import transform3Before from "@/assets/transform-1-before.jpg";
+import transform3Before from "@/assets/transform-2-before.jpg";
 import transform3After from "@/assets/transform-3-after.jpg";
 
 type Transformation = {
