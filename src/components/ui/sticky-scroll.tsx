@@ -33,7 +33,6 @@ const StickyScroll = forwardRef<HTMLElement>((_props, ref) => {
 
       <section className="text-white w-full bg-dark">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-2 px-2 md:px-0">
-          {/* Left column */}
           <div className="grid gap-2 col-span-1 md:col-span-4">
             <figure className="w-full">
               <img
@@ -69,7 +68,6 @@ const StickyScroll = forwardRef<HTMLElement>((_props, ref) => {
             </figure>
           </div>
 
-          {/* Sticky middle column */}
           <div className="sticky top-0 h-screen w-full col-span-1 md:col-span-4 gap-2 grid grid-rows-3 py-2">
             <figure className="w-full h-full">
               <img
@@ -97,7 +95,6 @@ const StickyScroll = forwardRef<HTMLElement>((_props, ref) => {
             </figure>
           </div>
 
-          {/* Right column */}
           <div className="grid gap-2 col-span-1 md:col-span-4">
             <figure className="w-full">
               <img

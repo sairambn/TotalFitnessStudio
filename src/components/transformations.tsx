@@ -207,7 +207,6 @@ function TransformationCard({ t, featured }: { t: Transformation; featured?: boo
 export function TransformationSection() {
   return (
     <section className="relative overflow-hidden">
-      {/* Immersive sticky gallery */}
       <StickyScroll />
 
       <div className="mx-auto max-w-6xl px-4 md:px-6 py-24 md:py-32">
