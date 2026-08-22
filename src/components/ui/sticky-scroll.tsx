@@ -1,13 +1,14 @@
 "use client";
 
 import { forwardRef } from "react";
-import transform1After from "@/assets/transform-1-after.jpg";
-import transform2After from "@/assets/transform-2-after.jpg";
-import transform3After from "@/assets/transform-3-after.jpg";
 import transform1Before from "@/assets/transform-3-before.jpg";
 import transform2Before from "@/assets/transform-2-before.jpg";
 import transform3Before from "@/assets/transform-2-before.jpg";
-import heroAthlete from "@/assets/hero-athlete.jpg";
+
+const transform1After = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkxCHY6N4FHXsHJdXm9bM2s7gjVrdb9kvYRclUuo7WGUB17yEEgzstnifMx2YRtZi-tvBWDa48a7t3UH1qxxD5L0-isnMWWz_uGkjA_GJjVRF-nrngTFfvWiOCOP8gPvJ5NRBO7=w1280-h1280-k-no";
+const transform2After = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnJDFed63BrcTJFknxuXGdEVNjcLA6B4cVBnpUthLsNe-7oMA-c2mhgEBFX6uM0AFDL_S9xDVYi8D9Hfp3tBGU4cBuxkF_6xtMNuvBaQikHb_y2LvT9fY25KaUiZEDpfn8jHMQ=w1280-h1280-k-no";
+const transform3After = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnfSIyt3kp3R5aywQOkhomfaTwbH2eeqNR-13TCAYzvR0rWXkQsMaujhOtK_nuVm1qsX3zfu6DJ6nT-2zavs7nKSgEgrZUR5TRsl7JnexlZ_tP4d5wrsUo-Dd5FV4Mp3HtSkg=w1280-h900-k-no";
+const heroAthlete = "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWndopWkfxw9GMKcHwk9yjIGGeufZr-SR3lM-QKWj8aDYU5jHSLuLV7Ug0pvO8zNIgwDVeoHUd_8lQF-V17p2uJBv_p2EtzNM7IbGwLMX6TAkfoWDIwUOUw31lQBExpjRbJoQr5Onw=w1600-h900-k-no";
 
 const StickyScroll = forwardRef<HTMLElement>((_props, ref) => {
   return (
