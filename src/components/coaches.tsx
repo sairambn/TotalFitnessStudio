@@ -38,15 +38,14 @@ export function CoachesSection() {
           <span className="text-brand">actually coach</span>
         </h2>
         <p className="mt-6 max-w-xl text-white/60 text-lg leading-relaxed">
-          No clipboard trainers. These are the people on the floor every morning helping you lock form,
-          push when it counts, and stay consistent.
+          No clipboard trainers. These are the people on the floor every morning helping you lock form, push when it counts, and stay consistent.
         </p>
 
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {COACHES.map((c) => (
             <article
               key={c.name}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] card-lift"
             >
               <div className="aspect-[3/4] overflow-hidden bg-black/40">
                 <img

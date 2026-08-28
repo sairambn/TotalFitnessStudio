@@ -23,7 +23,7 @@ export function ParallaxBand() {
           <span className="text-brand">No shortcuts.</span>
         </h2>
         <p className="mt-6 text-white/70 max-w-md text-sm md:text-base">
-          4,800 sq ft of serious equipment. Open from 4:30 AM so the early crew can get work done.
+          Serious equipment. Open from 4:30 AM so the early crew can get work done.
         </p>
       </div>
     </section>

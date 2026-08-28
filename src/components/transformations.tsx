@@ -1,13 +1,19 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArchGallery } from "@/components/ui/arch-gallery";
 import StickyScroll from "@/components/ui/sticky-scroll";
-import heroAthlete from "@/assets/hero-athlete.jpg";
-import transform1Before from "@/assets/transform-3-before.jpg";
-import transform1After from "@/assets/transform-1-after.jpg";
-import transform2Before from "@/assets/transform-2-before.jpg";
-import transform2After from "@/assets/transform-2-after.jpg";
-import transform3Before from "@/assets/transform-2-before.jpg";
-import transform3After from "@/assets/transform-3-after.jpg";
+
+const transform1After =
+  "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkxCHY6N4FHXsHJdXm9bM2s7gjVrdb9kvYRclUuo7WGUB17yEEgzstnifMx2YRtZi-tvBWDa48a7t3UH1qxxD5L0-isnMWWz_uGkjA_GJjVRF-nrngTFfvWiOCOP8gPvJ5NRBO7=w1280-h1280-k-no";
+const transform2After =
+  "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnJDFed63BrcTJFknxuXGdEVNjcLA6B4cVBnpUthLsNe-7oMA-c2mhgEBFX6uM0AFDL_S9xDVYi8D9Hfp3tBGU4cBuxkF_6xtMNuvBaQikHb_y2LvT9fY25KaUiZEDpfn8jHMQ=w1280-h1280-k-no";
+const transform3After =
+  "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnfSIyt3kp3R5aywQOkhomfaTwbH2eeqNR-13TCAYzvR0rWXkQsMaujhOtK_nuVm1qsX3zfu6DJ6nT-2zavs7nKSgEgrZUR5TRsl7JnexlZ_tP4d5wrsUo-Dd5FV4Mp3HtSkg=w1280-h900-k-no";
+const heroAthlete =
+  "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWndopWkfxw9GMKcHwk9yjIGGeufZr-SR3lM-QKWj8aDYU5jHSLuLV7Ug0pvO8zNIgwDVeoHUd_8lQF-V17p2uJBv_p2EtzNM7IbGwLMX6TAkfoWDIwUOUw31lQBExpjRbJoQr5Onw=w1600-h900-k-no";
+const before1 =
+  "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80";
+const before2 =
+  "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80";
 
 type Transformation = {
   name: string;
@@ -29,7 +35,7 @@ const TRANSFORMATIONS: Transformation[] = [
     badge: "Beast Mode",
     program: "Strength + Cut",
     trainer: "Coach Arjun",
-    before: transform1Before,
+    before: before1,
     after: transform1After,
   },
   {
@@ -39,7 +45,7 @@ const TRANSFORMATIONS: Transformation[] = [
     badge: "Shredded",
     program: "Hypertrophy + HIIT",
     trainer: "Coach Priya",
-    before: transform2Before,
+    before: before2,
     after: transform2After,
   },
   {
@@ -49,7 +55,7 @@ const TRANSFORMATIONS: Transformation[] = [
     badge: "Unstoppable",
     program: "Power + Recomp",
     trainer: "Coach Arjun",
-    before: transform3Before,
+    before: before1,
     after: transform3After,
     featured: true,
   },
@@ -237,10 +243,7 @@ export function TransformationSection() {
               { image: { src: transform1After, alt: "After transformation strong build" } },
               { image: { src: transform2After, alt: "After transformation shredded" } },
               { image: { src: transform3After, alt: "Featured after transformation" } },
-              { image: { src: transform3After, alt: "Powerful flex pose at Total Fitness" } },
               { image: { src: heroAthlete, alt: "Athlete training hard" } },
-              { image: { src: transform1Before, alt: "Starting point before" } },
-              { image: { src: transform2Before, alt: "Before progress photo" } },
             ]}
             cardWidth={160}
             cardHeight={220}
