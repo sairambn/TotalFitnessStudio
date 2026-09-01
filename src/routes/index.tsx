@@ -149,7 +149,7 @@ function HomePage() {
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto animate-fade-up delay-400">
             {[
               { n: "4.9★", l: "Google Rating" },
-              { n: `${SITE.reviewCount}+", l: "Reviews" },
+              { n: `${SITE.reviewCount}+`, l: "Reviews" },
               { n: "4:30 AM", l: "Opens Daily" },
               { n: "Unisex", l: "Women-owned" },
             ].map((s) => (
