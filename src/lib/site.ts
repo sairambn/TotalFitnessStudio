@@ -1,29 +1,21 @@
 /**
- * Business data aligned to public listings:
- * - Justdial: 4.9★ · ~798 reviews · Above Axis Bank, Hasthinapuram–Chitlapakkam
- * - Address directories: No. 35-B, Vijaya Saras Building, 3rd Floor, Rajendra Prasad Road,
- *   Gayathri Nagar, above Axis Bank, Chromepet, Chennai 600044
- * - Category: Unisex gym / fitness studio
- *
- * Phone kept from existing site operations (+91 99419 42942).
- * Hours kept as previously configured (verify on Google Business Profile).
+ * Total Fitness Studio — single source of truth
+ * Aligned to Google Maps + public listings
  */
 
 export const SITE = {
   name: "Total Fitness Studio",
+  nameTa: "டோட்டல் பிட்னஸ் ஸ்டுடியோ",
   tagline: "Chromepet's highest-rated unisex gym",
+  taglineTa: "குரோம்பேட்டில் உயர்ந்த மதிப்பீடு பெற்ற ஜிம்",
   phoneDisplay: "+91 99419 42942",
   phoneTel: "+919941942942",
   whatsapp: "919941942942",
-  /** Public aggregate from Justdial-area listings (~794–798) */
   rating: "4.9",
   reviewCount: 798,
-  /** Short line for footer / nav */
   addressShort: "Hasthinapuram, Chromepet, Chennai",
-  /** Full line matching public business directories */
   addressFull:
     "No. 35-B, Vijaya Saras Building, 3rd Floor, Rajendra Prasad Road, Gayathri Nagar (above Axis Bank), Hasthinapuram, Chromepet, Chennai, Tamil Nadu 600044",
-  /** Landmark helpers for SEO + FAQ */
   landmarks: [
     "Above Axis Bank",
     "Gayathri Nagar",
@@ -39,12 +31,16 @@ export const SITE = {
     "Selaiyur",
   ] as const,
   mapsUrl: "https://maps.app.goo.gl/M1VcPF2LMbexLFuE9",
-  coords: { lat: 12.9524, lng: 80.1381, label: "12.9524° N, 80.1381° E" },
+  reviewUrl: "https://search.google.com/local/writereview?placeid=ChIJ0dvd-FVeUjoREXvNxP6xxuI",
+  coords: { lat: 12.94097, lng: 80.14800, label: "12.9410° N, 80.1480° E" },
   postalCode: "600044",
   hours: { open: "04:30", close: "21:30", label: "4:30 AM – 9:30 PM" },
   category: "Unisex Gym & Fitness Studio",
   brand: "#E2FF00",
   dark: "#0F0F0F",
+  womenOwned: true,
+  lgbtqFriendly: true,
+  trainerHighlight: "Sakthivel master",
   keywords: [
     "Total Fitness Studio",
     "gym in Chromepet",
@@ -54,6 +50,7 @@ export const SITE = {
     "unisex gym Chromepet",
     "personal trainer Chromepet",
     "fitness studio above Axis Bank",
+    "டோட்டல் பிட்னஸ் ஸ்டுடியோ",
   ],
 } as const;
 
@@ -63,6 +60,9 @@ export const WHATSAPP_MESSAGES = {
   ),
   trial: encodeURIComponent(
     "Hi, I'd like to book my free trial session at Total Fitness Studio Chromepet.",
+  ),
+  membership: encodeURIComponent(
+    "Hi, I'm interested in membership at Total Fitness Studio. Please share current plans and offers.",
   ),
 } as const;
 
@@ -74,7 +74,6 @@ export function telUrl() {
   return `tel:${SITE.phoneTel}`;
 }
 
-/** Schema.org — set siteUrl to your production domain after deploy */
 export function localBusinessJsonLd(siteUrl: string, imageUrl: string) {
   return {
     "@context": "https://schema.org",
@@ -82,12 +81,12 @@ export function localBusinessJsonLd(siteUrl: string, imageUrl: string) {
     "@id": `${siteUrl}/#gym`,
     name: SITE.name,
     alternateName: [
+      SITE.nameTa,
       "Total Fitness Studio Chromepet",
       "Total Fitness Studio Hasthinapuram",
-      "Total Fitness Studio Chitlapakkam",
     ],
     description:
-      "Unisex gym and fitness studio in Hasthinapuram, Chromepet (above Axis Bank). Rated 4.9★ across hundreds of public reviews. Strength training, HIIT, and personal coaching. Open daily early morning to night.",
+      "Unisex gym and fitness studio in Hasthinapuram, Chromepet (above Axis Bank). Rated 4.9★ across hundreds of public reviews. Strength training, HIIT, and personal coaching. Open daily early morning to night. Women-owned and LGBTQ+ friendly.",
     image: imageUrl,
     telephone: SITE.phoneDisplay,
     url: siteUrl,
@@ -126,7 +125,8 @@ export function localBusinessJsonLd(siteUrl: string, imageUrl: string) {
       { "@type": "LocationFeatureSpecification", name: "Unisex facility", value: true },
       { "@type": "LocationFeatureSpecification", name: "Free weights", value: true },
       { "@type": "LocationFeatureSpecification", name: "Personal training", value: true },
-      { "@type": "LocationFeatureSpecification", name: "Locker rooms", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Women-owned", value: true },
+      { "@type": "LocationFeatureSpecification", name: "LGBTQ+ friendly", value: true },
     ],
   };
 }
