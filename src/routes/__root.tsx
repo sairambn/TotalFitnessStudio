@@ -10,6 +10,7 @@ import {
 import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { SITE } from "@/lib/site";
 
 const FONT_CSS =
   "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap";
@@ -39,7 +40,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: { error: unknown; reset: () => void }) {
   console.error(error);
   const router = useRouter();
 
@@ -96,8 +97,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "robots", content: "index, follow, max-image-preview:large" },
       { name: "geo.region", content: "IN-TN" },
       { name: "geo.placename", content: "Chromepet, Chennai" },
-      { name: "geo.position", content: "12.9524;80.1381" },
-      { name: "ICBM", content: "12.9524, 80.1381" },
+      { name: "geo.position", content: `${SITE.coords.lat};${SITE.coords.lng}` },
+      { name: "ICBM", content: `${SITE.coords.lat}, ${SITE.coords.lng}` },
       {
         property: "og:title",
         content: "Total Fitness Studio — Best Gym in Chromepet · 4.9★",
