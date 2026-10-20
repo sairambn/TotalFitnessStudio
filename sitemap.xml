@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://localhost:8080/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <!-- 1. Main Training Floor -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym1.jpg</image:loc>
+      <image:title>Total Fitness Studio Hasthinapuram Chromepet Chennai Main Gym Floor</image:title>
+      <image:caption>Complete panoramic overview of free weights, dumbbell racks, and biomechanical machines at Total Fitness Studio.</image:caption>
+    </image:image>
+
+    <!-- 2. Dumbbell & Cable Zone -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_1.webp</image:loc>
+      <image:title>Heavy Dumbbell Racks and Cable Crossover at Total Fitness Studio</image:title>
+      <image:caption>Multi-station cable crossover and dumbbell training zone in Chromepet.</image:caption>
+    </image:image>
+
+    <!-- 3. Cardio Deck -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_2.webp</image:loc>
+      <image:title>Cardio Running Deck and Treadmills at Total Fitness Studio</image:title>
+      <image:caption>Commercial motorized treadmills and fat-loss cardio conditioning deck.</image:caption>
+    </image:image>
+
+    <!-- 4. Leg Press Suite -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_3.webp</image:loc>
+      <image:title>45 Degree Leg Press and Hack Squat at Total Fitness Studio</image:title>
+      <image:caption>Plate-loaded lower body leg press and quad extension machines.</image:caption>
+    </image:image>
+
+    <!-- 5. Bench Press Station -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_4.webp</image:loc>
+      <image:title>Olympic Bench Press and Barbell Station at Total Fitness Studio</image:title>
+      <image:caption>Heavy Olympic flat and incline chest press stations.</image:caption>
+    </image:image>
+
+    <!-- 6. Lat Pulldown & Row -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_5.webp</image:loc>
+      <image:title>Wide-Grip Lat Pulldown and Cable Rows at Total Fitness Studio</image:title>
+      <image:caption>Precision back hypertrophy and cable pulldown towers.</image:caption>
+    </image:image>
+
+    <!-- 7. Championship Honors -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_6.webp</image:loc>
+      <image:title>TFS Bodybuilding Honors and Muscle Maniac Title Wall</image:title>
+      <image:caption>Master Sakthivel competitive bodybuilding title credentials and honors.</image:caption>
+    </image:image>
+
+    <!-- 8. Commercial Elliptical -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_7.webp</image:loc>
+      <image:title>Commercial Elliptical Cross-Trainer Zone at Total Fitness Studio</image:title>
+      <image:caption>Low-impact joint-friendly aerobic cross-trainers in Chromepet.</image:caption>
+    </image:image>
+
+    <!-- 9. Front Desk & Champion Wall -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_8.webp</image:loc>
+      <image:title>Front Desk Reception and Master Sakthi Champion Poster Wall</image:title>
+      <image:caption>Entrance reception desk with LED feature lighting and championship banner.</image:caption>
+    </image:image>
+
+    <!-- 10. Master Sakthi at Reception -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_9.webp</image:loc>
+      <image:title>Master Sakthivel Head Coach at Total Fitness Studio Reception</image:title>
+      <image:caption>Award-winning Bodybuilder Champion Master Sakthi welcoming members at TFS Chromepet.</image:caption>
+    </image:image>
+
+    <!-- 11. Women & Personal Coaching Floor -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_10.webp</image:loc>
+      <image:title>Dedicated Women Batch and Personal Training Floor at Total Fitness Studio</image:title>
+      <image:caption>Supportive ladies-only training arena and core toning zones.</image:caption>
+    </image:image>
+
+    <!-- 12. Nutrition Supplements Counter -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_11.webp</image:loc>
+      <image:title>TFS Nutrition Counter and Certified Sports Supplements Desk</image:title>
+      <image:caption>Sports nutrition and recovery supplements station at Total Fitness Studio.</image:caption>
+    </image:image>
+
+    <!-- 13. Motorized Treadmill Console -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_12.webp</image:loc>
+      <image:title>Commercial Motorized Shock-Absorbing Treadmill Console at TFS</image:title>
+      <image:caption>Advanced cardio running and interval incline walking machinery.</image:caption>
+    </image:image>
+
+    <!-- 14. Transformation: Baseline Evaluation (Before) -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_13.webp</image:loc>
+      <image:title>Client Vigneshwaran Before Weight Loss at Total Fitness Studio</image:title>
+      <image:caption>Initial consultation baseline photograph of client before starting the 6-month program.</image:caption>
+    </image:image>
+
+    <!-- 15. Chest & Shoulder Press -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_14.webp</image:loc>
+      <image:title>Seated Chest and Shoulder Press Stations at Total Fitness Studio</image:title>
+      <image:caption>Selectorized biomechanical upper-body pressing machines.</image:caption>
+    </image:image>
+
+    <!-- 16. Transformation: -22kg Fat Loss with Master Sakthi -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_15.webp</image:loc>
+      <image:title>Client Vigneshwaran After -22kg Transformation with Master Sakthi</image:title>
+      <image:caption>Documented 22kg fat loss and lean body recomposition achieved with Master Sakthi at TFS Chromepet.</image:caption>
+    </image:image>
+
+    <!-- 17. Transformation: Core & Conditioning Progress -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_16.webp</image:loc>
+      <image:title>Member Daily Fitness Progress Check at Total Fitness Studio</image:title>
+      <image:caption>Athletic core definition and stamina conditioning progress at TFS Chromepet.</image:caption>
+    </image:image>
+
+    <!-- 18. Transformation: Dual Brother Milestone -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_17.webp</image:loc>
+      <image:title>Dual Brothers 18kg Fat Loss Milestone with Master Sakthi at TFS Gym</image:title>
+      <image:caption>Suresh and Ramesh celebrating combined 18kg weight loss and strength transformation.</image:caption>
+    </image:image>
+
+    <!-- 19. Morning Workout Story -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_18.webp</image:loc>
+      <image:title>Morning Cardio Running and Workout Story at Total Fitness Studio</image:title>
+      <image:caption>Dedicated early morning 5:30 AM member workout session at TFS.</image:caption>
+    </image:image>
+
+    <!-- 20. Functional Turf & Mural -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_19.webp</image:loc>
+      <image:title>Motivational Training Turf and Sledge Tire Wall at Total Fitness Studio</image:title>
+      <image:caption>Functional agility area with athlete motivation wall mural in Chromepet.</image:caption>
+    </image:image>
+
+    <!-- 21. Functional Core Conditioning -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_20.webp</image:loc>
+      <image:title>Functional Training and Core Conditioning at Total Fitness Studio</image:title>
+      <image:caption>Agility, kettlebell, and metabolic conditioning floor.</image:caption>
+    </image:image>
+
+    <!-- 22. Panoramic Skyview Cardio Deck -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_21.webp</image:loc>
+      <image:title>Panoramic Skyview 3rd Floor Cardio Deck and Treadmills at TFS</image:title>
+      <image:caption>Third-floor wall-to-wall glass windows offering refreshing scenic views during cardio.</image:caption>
+    </image:image>
+
+    <!-- 23. Transformation: Karthik Rajan Recomp -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_22.webp</image:loc>
+      <image:title>Client Karthik Rajan Physique Transformation with Master Sakthi</image:title>
+      <image:caption>Lean muscle gains and posture alignment achieved under Master Sakthi's personal coaching.</image:caption>
+    </image:image>
+
+    <!-- 24. Smith Machine & Squat Racks -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_23.webp</image:loc>
+      <image:title>Guided Smith Machine and Heavy Power Squat Racks at Total Fitness Studio</image:title>
+      <image:caption>Heavy compound lifting and safe squat cages in Chromepet.</image:caption>
+    </image:image>
+
+    <!-- 25. Transformation: Women's Batch Community -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_24.webp</image:loc>
+      <image:title>Women Dedicated Batch Celebration and Fitness Community at TFS</image:title>
+      <image:caption>Female members milestone event reflecting private, supportive women-only batch environment.</image:caption>
+    </image:image>
+
+    <!-- 26. Transformation: Women's Empowerment Batch -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_25.webp</image:loc>
+      <image:title>TFS Women Fitness Group Empowerment Session in Hasthinapuram</image:title>
+      <image:caption>Empowerment, nutrition consultation, and milestone celebration for ladies batch.</image:caption>
+    </image:image>
+
+    <!-- 27. Full Studio Floor Panorama -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_50.webp</image:loc>
+      <image:title>Full Air-Conditioned Studio Floor Panorama at Total Fitness Studio</image:title>
+      <image:caption>Panoramic view of workout floor and clean ventilation facilities.</image:caption>
+    </image:image>
+
+    <!-- 28. Master Sakthi Coaching Floor -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_60.webp</image:loc>
+      <image:title>Master Sakthivel Coaching and Free Weight Floor at Total Fitness Studio</image:title>
+      <image:caption>Bodybuilding champion Master Sakthi personal coaching mirror station.</image:caption>
+    </image:image>
+
+    <!-- 29. Transformation: Workout Partners -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_61.webp</image:loc>
+      <image:title>Workout Partners Training Results at Total Fitness Studio Chromepet</image:title>
+      <image:caption>Anand and Deepak athletic strength and stamina results after consistent lifting.</image:caption>
+    </image:image>
+
+    <!-- 30. Transformation: Client Milestone -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_62.webp</image:loc>
+      <image:title>Client Transformation Milestone with Master Sakthi at Total Fitness Studio</image:title>
+      <image:caption>Successful body recomposition and fat loss celebration on studio floor.</image:caption>
+    </image:image>
+
+    <!-- 31. Biomechanical Machines -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_64.webp</image:loc>
+      <image:title>Advanced Selectorized Machine Line at Total Fitness Studio</image:title>
+      <image:caption>Biomechanical pin-loaded isolation machines for all muscle groups.</image:caption>
+    </image:image>
+
+    <!-- 32. Transformation: Personal Mentorship Results -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym_65.webp</image:loc>
+      <image:title>Personal Coaching Results with Master Sakthi at TFS Gym Chromepet</image:title>
+      <image:caption>Physique transformation and strength development under Master Sakthi.</image:caption>
+    </image:image>
+
+    <!-- 33. Transformation: Natural Hypertrophy & Bicep Peak -->
+    <image:image>
+      <image:loc>http://localhost:8080/assets/images/gmap_gym2.webp</image:loc>
+      <image:title>Member Muscle Transformation and Bicep Flex at TFS Gym Chromepet</image:title>
+      <image:caption>Natural hypertrophy and muscle definition achieved through progressive overload.</image:caption>
+    </image:image>
+  </url>
+</urlset>

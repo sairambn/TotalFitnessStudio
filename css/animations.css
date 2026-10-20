@@ -1,0 +1,130 @@
+/* ==========================================================================
+   TOTAL FITNESS STUDIO (TFS) - KEYFRAME ANIMATIONS & DYNAMICS
+   ========================================================================== */
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(204, 255, 0, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(204, 255, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(204, 255, 0, 0);
+  }
+}
+
+@keyframes heroZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes floatLevitate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px var(--neon-volt-dim);
+  }
+  50% {
+    box-shadow: 0 0 35px var(--neon-volt-glow);
+  }
+}
+
+@keyframes shineSlide {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Scroll-triggered reveal utilities */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay classes */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Glowing neon button sweep effect */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: skewX(-20deg);
+  animation: shineSlide 4s infinite;
+}
+
+/* Marquee / Ticker Animation */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: var(--neon-volt);
+  color: var(--text-dark);
+  padding: 0.85rem 0;
+  font-weight: 900;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: rotate(-1deg) scale(1.02);
+  margin: 3rem 0;
+  box-shadow: 0 0 30px var(--neon-volt-glow);
+}
+
+.ticker-content {
+  display: flex;
+  white-space: nowrap;
+  animation: tickerMove 25s linear infinite;
+  gap: 3rem;
+}
+
+@keyframes tickerMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ticker-item::after {
+  content: '★';
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
