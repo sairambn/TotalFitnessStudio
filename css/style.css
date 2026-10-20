@@ -89,6 +89,9 @@ html {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
 /* Custom Luxury Webkit Scrollbar */
@@ -124,6 +127,8 @@ body {
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
   position: relative;
   line-height: 1.6;
 }
@@ -328,15 +333,18 @@ img {
 .theme-selector {
   display: flex;
   background: rgba(255, 255, 255, 0.05);
-  padding: 3px;
+  padding: 4px 6px;
   border-radius: var(--radius-full);
   border: 1px solid var(--border-light);
-  gap: 4px;
+  gap: 8px;
+  align-items: center;
 }
 
 .theme-dot {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
   border-radius: 50%;
   cursor: pointer;
   border: 2px solid transparent;
@@ -1190,6 +1198,7 @@ img {
   font-weight: 600;
 }
 
+.row-class h3,
 .row-class h4 {
   font-size: 1.15rem;
   font-weight: 800;
@@ -1216,6 +1225,7 @@ img {
   border: 1px solid var(--neon-volt);
 }
 
+.instructor-info h4,
 .instructor-info h5 {
   font-size: 0.9rem;
   color: var(--text-white);
@@ -2469,7 +2479,7 @@ img {
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: #94a3b8;
 }
 
 .social-links {
@@ -3008,6 +3018,17 @@ img {
   .trainers-grid,
   .location-card-grid {
     grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  .schedule-controls {
+    padding: 1rem;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .day-selector {
+    max-width: 100%;
+    min-width: 0;
   }
   .pricing-card.featured {
     transform: none;
@@ -3037,3 +3058,79 @@ img {
     padding-bottom: 74px;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+    max-width: 100vw;
+  }
+  .hero-title {
+    font-size: 2.1rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .gmap-rating-hero-badge {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.6rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .stat-item {
+    padding: 0.75rem;
+  }
+  .stat-number {
+    font-size: 1.6rem;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  .location-card-grid {
+    padding: 1.15rem;
+  }
+  .location-info h3 {
+    font-size: 1.4rem;
+    word-break: break-word;
+  }
+  .calc-container {
+    padding: 1.15rem;
+  }
+  .day-btn {
+    min-width: 75px;
+    padding: 0.5rem 0.25rem;
+  }
+  .section-title {
+    font-size: 1.9rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+  .pricing-card {
+    padding: 1.5rem;
+  }
+  .program-card {
+    padding: 1.25rem;
+  }
+  .trainer-card {
+    padding: 1.25rem;
+  }
+}
+

@@ -42,14 +42,19 @@
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 
-  <!-- Google Fonts: Outfit, Plus Jakarta Sans, JetBrains Mono -->
+  <!-- Preload High-Priority Hero WebP Image for Instant Mobile LCP -->
+  <link rel="preload" as="image" href="assets/images/hero_mobile.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, JetBrains Mono (Non-Render-Blocking & Zero CLS) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=optional">
+  </noscript>
 
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <!-- Production Minified & Bundled Design System Stylesheet -->
+  <link rel="stylesheet" href="css/bundle.min.css">
 
   <!-- JSON-LD Schema.org Structured Data: WebSite & Sitelinks -->
   <script type="application/ld+json">
@@ -253,8 +258,8 @@
     <!-- Real-time Reading Progress Bar -->
     <div class="scroll-reading-bar" id="scroll-reading-bar"></div>
     <div class="container nav-container">
-      <a href="#hero" class="nav-brand" id="brand-logo" aria-label="Total Fitness Studio Home">
-        <div class="brand-icon">⚡</div>
+      <a href="#hero" class="nav-brand" id="brand-logo">
+        <div class="brand-icon" aria-hidden="true">⚡</div>
         <div class="brand-text">
           <span class="name">TOTAL FITNESS STUDIO</span>
           <span class="sub">CHROMEPET • CHENNAI • ESTD. 2014</span>
@@ -298,15 +303,19 @@
        HERO SECTION WITH GOOGLE MAPS PROOF
        ========================================================================== -->
   <header class="hero" id="hero">
-    <!-- Hero Media Background (LCP Optimized) -->
+    <!-- Hero Media Background (LCP Optimized Picture) -->
     <div class="hero-bg-media">
-      <img src="assets/images/gmap_gym1.jpg" 
-           alt="Total Fitness Studio Chromepet Gym Floor - Heavy Dumbbells and Strength Equipment from Google Maps" 
-           id="hero-bg-image" 
-           width="1728" 
-           height="1728" 
-           fetchpriority="high" 
-           loading="eager" />
+      <picture>
+        <source media="(max-width: 768px)" srcset="assets/images/hero_mobile.webp" type="image/webp">
+        <source srcset="assets/images/hero_desktop.webp" type="image/webp">
+        <img src="assets/images/hero_mobile.webp" 
+             alt="Total Fitness Studio Chromepet Gym Floor - Heavy Dumbbells and Strength Equipment from Google Maps" 
+             id="hero-bg-image" 
+             width="800" 
+             height="800" 
+             fetchpriority="high" 
+             loading="eager" />
+      </picture>
     </div>
 
     <div class="container hero-grid">
@@ -1946,9 +1955,9 @@
             Hasthinapuram’s most trusted fitness center. Mentored by Master Sakthivel (Bodybuilding Champion). Transforming lives through real guidance since 2014.
           </p>
           <div class="social-links">
-            <a href="https://maps.google.com/?q=Total+Fitness+Studio+Hasthinapuram+Chromepet+Chennai" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Maps">GM</a>
-            <a href="https://wa.me/919941942942" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">WA</a>
-            <a href="tel:+919941942942" class="social-link" aria-label="Phone">📞</a>
+            <a href="https://maps.google.com/?q=Total+Fitness+Studio+Hasthinapuram+Chromepet+Chennai" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Maps Location"><span aria-hidden="true">📍</span></a>
+            <a href="https://wa.me/919941942942" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp Master Sakthi"><span aria-hidden="true">💬</span></a>
+            <a href="tel:+919941942942" class="social-link" aria-label="Direct Phone Call"><span aria-hidden="true">📞</span></a>
           </div>
         </div>
 
@@ -2138,7 +2147,7 @@
   <!-- ==========================================================================
        MODAL 2: FULLSCREEN IMAGE LIGHTBOX WITH GALLERY NAVIGATION
        ========================================================================== -->
-  <div class="modal-overlay" id="gallery-lightbox-modal" role="dialog" aria-modal="true">
+  <div class="modal-overlay" id="gallery-lightbox-modal" role="dialog" aria-modal="true" aria-label="Studio Photo Lightbox">
     <div class="modal-box lightbox-box" style="max-width: 960px; padding: 1.5rem; background: #0c0e14; position: relative;">
       <button class="modal-close" aria-label="Close lightbox">✕</button>
 
@@ -2147,7 +2156,7 @@
       <button type="button" class="lightbox-nav-btn next" id="lightbox-next" aria-label="Next Photo">›</button>
 
       <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1rem; max-height: 70vh; display: flex; align-items: center; justify-content: center; background: #000;">
-        <img id="lightbox-full-img" src="" alt="Full size preview" style="max-width: 100%; max-height: 68vh; object-fit: contain;" />
+        <img id="lightbox-full-img" src="" alt="Full size preview" width="800" height="600" style="max-width: 100%; max-height: 68vh; object-fit: contain;" />
       </div>
 
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
@@ -2190,21 +2199,18 @@
 
   <!-- Mobile Sticky Bottom Conversion Bar -->
   <nav class="mobile-sticky-bottom-bar" id="mobile-sticky-bar" aria-label="Mobile Quick Connect">
-    <a href="tel:+919941942942" class="mobile-bar-btn call" aria-label="Call Studio Directly">
-      <span>📞 Call</span>
+    <a href="tel:+919941942942" class="mobile-bar-btn call">
+      <span aria-hidden="true">📞</span> <span>Call</span>
     </a>
-    <a href="https://wa.me/919941942942?text=Hello%20Master%20Sakthi,%20I%20am%20interested%20in%20Total%20Fitness%20Studio" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn wa" aria-label="WhatsApp Master Sakthi">
-      <span>💬 WhatsApp</span>
+    <a href="https://wa.me/919941942942?text=Hello%20Master%20Sakthi,%20I%20am%20interested%20in%20Total%20Fitness%20Studio" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn wa">
+      <span aria-hidden="true">💬</span> <span>WhatsApp</span>
     </a>
-    <button type="button" class="mobile-bar-btn trial open-trial-modal" aria-label="Claim Free 7-Day Trial">
-      <span>⚡ Free Pass</span>
+    <button type="button" class="mobile-bar-btn trial open-trial-modal">
+      <span aria-hidden="true">⚡</span> <span>Free Pass</span>
     </button>
   </nav>
 
-  <!-- JavaScript Controllers -->
-  <script src="js/calculator.js"></script>
-  <script src="js/schedule.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/app.js"></script>
+  <!-- Production Minified & Bundled JavaScript Controller -->
+  <script src="js/bundle.min.js" defer></script>
 </body>
 </html>

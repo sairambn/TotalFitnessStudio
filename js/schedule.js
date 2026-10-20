@@ -89,13 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="time-duration">${item.duration}</div>
         </div>
         <div class="row-class">
-          <h4>${item.name}</h4>
+          <h3>${item.name}</h3>
           <span>Intensity: ${item.intensity}</span>
         </div>
         <div class="row-instructor">
           <img src="${item.avatar}" alt="${item.instructor}" class="instructor-avatar" />
           <div class="instructor-info">
-            <h5>${item.instructor}</h5>
+            <h4>${item.instructor}</h4>
             <span>${item.role}</span>
           </div>
         </div>
