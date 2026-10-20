@@ -1,13 +1,15 @@
 {
   "name": "total-fitness-studio",
   "version": "2.0.0",
+  "private": true,
   "description": "Total Fitness Studio (Chromepet, Chennai) - High-performance gym website with 4.9★ rating",
   "scripts": {
     "dev": "python3 -m http.server 8080",
     "serve": "bunx serve -p 8080 .",
-    "build:css": "cat css/style.css css/animations.css > css/bundle.css && bun build css/bundle.css --outfile=css/bundle.min.css --minify && rm -f css/bundle.css",
-    "build:js": "cat js/calculator.js js/schedule.js js/modal.js js/app.js > js/bundle.js && bun build js/bundle.js --outfile=js/bundle.min.js --minify && rm -f js/bundle.js",
-    "build": "bun run build:css && bun run build:js",
+    "build": "echo 'Static deployment ready'",
+    "bundle:css": "cat css/style.css css/animations.css > css/bundle.css && bun build css/bundle.css --outfile=css/bundle.min.css --minify && rm -f css/bundle.css",
+    "bundle:js": "cat js/calculator.js js/schedule.js js/modal.js js/app.js > js/bundle.js && bun build js/bundle.js --outfile=js/bundle.min.js --minify && rm -f js/bundle.js",
+    "bundle": "bun run bundle:css && bun run bundle:js",
     "test:screenshots": "bun scripts/capture_after_screenshots.js",
     "test:lighthouse": "bun scripts/run_after_lighthouse.js"
   },
